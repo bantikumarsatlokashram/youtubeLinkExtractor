@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Link Extractor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .rounded-lg {
+            border-radius: 2.5rem;
+        }
+        .resize-none {
+            resize: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl mx-4 fade-in">
+        <h1 class="text-2xl font-bold text-center mb-6 text-gray-800">YouTube Link Extractor</h1>
+        <textarea id="inputText" placeholder="Paste your script here..." 
+                  class="w-[80%] mx-auto p-3 border border-gray-300 rounded-lg mb-4 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 block"></textarea>
+        <button id="extractButton" 
+                class="w-[80%] mx-auto bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105 block">
+            Extract YouTube Links
+        </button>
+        <div id="output" class="mt-4 text-gray-700 w-[80%] mx-auto"></div>
+        <button id="downloadButton" 
+                class="w-[80%] mx-auto bg-green-500 text-white py-2 rounded-lg mt-4 hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-105 hidden block">
+            Download Links as .txt
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
