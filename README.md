@@ -46,7 +46,7 @@ youtube-link-extractor/
 
 ## Live Demo 🌐
 
-Check out the live demo of the tool here: [Live Demo](#)
+Check out the live demo of the tool here: [Live Demo](https://bkpkvideo.com/tools/youtube-link-extractor/)
 
 ---
 
